@@ -3,23 +3,18 @@ if [[ $TERMINIX_ID ]]; then
 fi
 
 	# Oh-my-zsh configs
-ZSH=/usr/share/oh-my-zsh/
-ZSH_THEME="bira"
+export ZSH=/home/storey/.oh-my-zsh
+ZSH_THEME="xxf"
 DISABLE_AUTO_UPDATE="false"
-export UPDATE_ZSH_DAYS=13
 ENABLE_CORRECTION="false"
 COMPLETION_WAITING_DOTS="true"
-plugins=(archlinux git npm sudo systemd virtualenvwrapper)
+plugins=(archlinux git npm sudo systemd)
 
 	# Env stuff
 export LANG=en_US.UTF-8
 
 	# My shit
 alias sudo="sudo -i"
-alias pacs="sudo pacman -S"
-alias pacup="sudo pacman -Syu"
-alias pacy="sudo pacman -Syy"
-alias ssysctl="sudo systemctl"
 alias sano="sudo nano"
 
 	# Oh-my-zsh cache and housekeeping
